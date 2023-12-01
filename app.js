@@ -9,6 +9,7 @@ app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
 
 app.use(express.static('css'));
+app.use(express.static('img'));
 app.use(express.static('webfonts'));
 app.use(express.static('images'));
 app.use(express.static('vendor'));
@@ -25,6 +26,11 @@ app.get('/',function(req,res)
 app.get('/blog',function(req,res)
 {
     res.render('blog'); 
+})
+
+app.get('/faq',function(req,res)
+{
+    res.render('faq'); 
 })
 
 
