@@ -25,8 +25,20 @@ app.get('/',function(req,res)
 
 app.get('/blog',function(req,res)
 {
-    res.render('blog'); 
+    res.render('blog1'); 
 })
+
+app.get('/post',function(req,res)
+{
+    res.render('post'); 
+})
+
+app.get('/contact',function(req,res)
+{
+    res.render('contact'); 
+})
+
+
 
 app.get('/faq',function(req,res)
 {
