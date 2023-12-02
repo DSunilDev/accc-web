@@ -28,6 +28,12 @@ app.get('/blog',function(req,res)
     res.render('blog1'); 
 })
 
+app.get('/blog2',function(req,res)
+{
+    res.render('blog2'); 
+})
+
+
 app.get('/post',function(req,res)
 {
     res.render('post'); 
@@ -38,7 +44,20 @@ app.get('/contact',function(req,res)
     res.render('contact'); 
 })
 
+app.get('/portfolio_overall',function(req,res)
+{
+    res.render('portfolio-item'); 
+})
 
+app.get('/portfolio',function(req,res)
+{
+    res.render('portfolio-item'); 
+})
+
+app.get('/portfolio2',function(req,res)
+{
+    res.render('portfolio2'); 
+})
 
 app.get('/faq',function(req,res)
 {
