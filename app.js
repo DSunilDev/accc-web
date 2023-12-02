@@ -9,14 +9,13 @@ app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
 
 app.use(express.static('css'));
-app.use(express.static('img'));
 app.use(express.static('webfonts'));
 app.use(express.static('images'));
 app.use(express.static('vendor'));
 app.use(express.static('uploads'));
 app.use(express.static('js'));
 app.use(express.static('mail'));
-
+app.use(express.static('img'));
 
 app.get('/',function(req,res)
 {
